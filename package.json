@@ -4,7 +4,7 @@
   "description": "統計学の諸概念を日本語で実装",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "$(npm run)/mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/kjirou/toukeigaku/issues"
   },
-  "homepage": "https://github.com/kjirou/toukeigaku#readme"
+  "homepage": "https://github.com/kjirou/toukeigaku#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
 }
