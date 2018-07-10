@@ -1,0 +1,23 @@
+{
+  "name": "toukeigaku",
+  "version": "0.0.0",
+  "description": "統計学の諸概念を日本語で実装",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjirou/toukeigaku.git"
+  },
+  "keywords": [
+    "japanese",
+    "statistics"
+  ],
+  "author": "kjirou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kjirou/toukeigaku/issues"
+  },
+  "homepage": "https://github.com/kjirou/toukeigaku#readme"
+}
