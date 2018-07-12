@@ -14,7 +14,7 @@ describe('lib/toukeigaku', function() {
       ];
 
       it('aaaaaaa', function() {
-        const 度数分布 = create度数分布(データリスト, 4);
+        const 度数分布 = create度数分布(データリスト, 0, 12, 4);
         console.log(度数分布);
       });
     });
