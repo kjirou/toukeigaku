@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/kjirou/toukeigaku#readme",
   "dependencies": {
-    "decimal.js": "^10.0.1",
+    "decimal.js": "^10.0.1"
+  },
+  "devDependencies": {
     "mocha": "^5.2.0"
   }
 }
