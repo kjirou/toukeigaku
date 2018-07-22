@@ -9,14 +9,14 @@ const {
 describe('lib/toukeigaku', function() {
   describe('create度数分布', function() {
     describe('相対度数・累積相対度数を除く数値が整数になる度数分布のとき', function() {
-      const データリスト = [
+      const データセット = [
         0, 1, 3, 4,
         5, 5, 6, 6,
         6, 7, 9, 12,
       ];
 
       before(function() {
-        this.度数分布 = create度数分布(データリスト, 0, 12, 4);
+        this.度数分布 = create度数分布(データセット, 0, 12, 4);
       });
 
       it('階層数', function() {
@@ -52,7 +52,7 @@ describe('lib/toukeigaku', function() {
         assert.strictEqual(Number(this.度数分布[3].階級幅), expected);
       });
 
-      it('度数の合計がデータリストの長さと等しい', function() {
+      it('度数の合計がデータセットの長さと等しい', function() {
         const expected = 12;
         assert.strictEqual(
           this.度数分布.reduce((memo, 階級) => {
@@ -62,7 +62,7 @@ describe('lib/toukeigaku', function() {
         );
       });
 
-      it('最大階層の累積度数がデータリストの長さと等しい', function() {
+      it('最大階層の累積度数がデータセットの長さと等しい', function() {
         assert.strictEqual(Number(this.度数分布[3].累積度数), 12);
       });
 
