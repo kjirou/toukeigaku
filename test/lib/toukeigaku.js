@@ -8,7 +8,8 @@ const {
 
 describe('lib/toukeigaku', function() {
   describe('create度数分布', function() {
-    describe('相対度数・累積相対度数を除く数値が整数になる度数分布のとき', function() {
+    describe('各プロパティ', function() {
+      // 端数処理が入ると別論点が混入してしまうので、相対度数・累積相対度数以外に端数が生じないデータにする
       const データセット = [
         0, 1, 3, 4,
         5, 5, 6, 6,
