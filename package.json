@@ -4,6 +4,7 @@
   "description": "統計学の諸概念を日本語で実装",
   "main": "index.js",
   "scripts": {
+    "flow": "$(npm bin)/flow",
     "test": "$(npm bin)/mocha 'test/**/*.js'"
   },
   "repository": {

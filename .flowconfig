@@ -1,0 +1,13 @@
+[ignore]
+<PROJECT_ROOT>/.git/.*
+<PROJECT_ROOT>/.github/.*
+<PROJECT_ROOT>/bin/.*
+<PROJECT_ROOT>/node_modules/.*
+<PROJECT_ROOT>/tmp/.*
+
+[include]
+
+[libs]
+./types
+
+[options]
