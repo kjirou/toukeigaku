@@ -4,6 +4,7 @@ const {describe, it} = require('mocha');
 
 const {
   create度数分布,
+  calculate度数分布の平均値,
 } = require('../../lib/toukeigaku');
 
 describe('lib/toukeigaku', function() {
@@ -157,6 +158,14 @@ describe('lib/toukeigaku', function() {
           });
         });
       });
+    });
+  });
+
+  describe('calculate度数分布の平均値', function() {
+    it('正しく計算している', function() {
+      const 度数分布 = create度数分布([1, 1, 1, 19, 19], 0, 20, 2);
+      // (5 * 3 + 15 * 2) / 5 = 9
+      assert.strictEqual(calculate度数分布の平均値(度数分布), '9');
     });
   });
 });
